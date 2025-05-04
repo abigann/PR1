@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Jadwal Perkuliahan R1</title>
+<style>
+  /* Reset and base */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9fafb;
+    color: #333;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  a {
+    color: #0366d6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a:hover,
+  a:focus {
+    color: #023e8a;
+    outline: none;
+  }
+
+  /* Container */
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* Header */
+  header {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    user-select: none;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav li {
+    margin-left: 1.5rem;
+  }
+  nav a {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  /* Mobile navigation button */
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .nav-toggle span {
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+  }
+
+  /* Main content */
+  main {
+    background: white;
+    margin: 2rem auto;
+    max-width: 960px;
+    padding: 2rem 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  }
+  h1, h2, h3 {
+    margin-top: 0;
+    font-weight: 700;
+  }
+  h1 {
+    font-size: 2rem;
+    color: #0077cc;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+    color: #004a99;
+    margin-bottom: 0.75rem;
+  }
+  p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+  }
+  .button-primary {
+    display: inline-block;
+    background-color: #0077cc;
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    user-select: none;
+  }
+  .button-primary:hover,
+  .button-primary:focus {
+    background-color: #004a99;
+    outline: none;
+  }
+
+  /* Sections */
+  section {
+    margin-bottom: 3rem;
+  }
+
+  /* Footer */
+  footer {
+    background-color: #0077cc;
+    color: white;
+    text-align: center;
+    padding: 1rem 20px;
+    font-size: 0.9rem;
+  }
+
+  /* Responsive */
+  @media (max-width: 700px) {
+    .header-inner {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    nav {
+      display: none;
+      width: 100%;
+      background-color: #005fa3;
+      margin-top: 0.5rem;
+      border-radius: 0 0 8px 8px;
+      flex-direction: column;
+    }
+    nav ul {
+      flex-direction: column;
+    }
+    nav li {
+      margin: 0.5rem 0;
+    }
+    nav.show {
+      display: flex;
+    }
+    .nav-toggle {
+      display: flex;
+    }
+  }
+
+  /* Content image styling */
+  .image-wrapper {
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem auto;
+  }
+  .image-wrapper img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner container">
+    <div class="logo" tabindex="0" aria-label="Site Logo">UNNES</div>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="primary-menu" role="navigation" aria-label="Primary Navigation">
+      <ul>
+        <li><a href="#" tabindex="0">Home</a></li>
+        <li><a href="#" tabindex="0">About</a></li>
+        <li><a href="#" tabindex="0">Services</a></li>
+        <li><a href="#" tabindex="0">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="container" role="main">
+  <section>
+    <h1>Jadwal Perkuliahan PMAT 23 R1</h1>
+    <p>Welcome guys, selamat menikmati karya kecil kami.</p>
+    <button class="button-primary" type="button">Jadwal Kuliah</button>
+    <button class="button-primary" type="button">Daftar Mahasiswa</button>
+  </section>
+  <section>
+    <h2>Berita Terkini</h2>
+    <p>Raih IPK diatas 3,5 Mahasiswa R1 Bisa Ambil 24 SKS</p>
+    <ul>
+      <li>UAS sudah dilaksanakan, yeyy.</li>
+    </ul>
+  </section>
+  <section class="image-wrapper" aria-label="Sample design image">
+    <img src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/72/2024/01/18/WhatsApp-Image-2023-04-11-at-113158-1-593537.jpeg" alt="Universitas Negeri Semarang" />
+  </section>
+</main>
+<footer>
+  &copy; 2025 Habba Fakhurroziq Habib. Good boys.
+</footer>
+<script>
+  // Mobile navigation toggle
+  const navToggle = document.querySelector('.nav-toggle');
+  const navMenu = document.getElementById('primary-menu');
+
+  navToggle.addEventListener('click', () => {
+    const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+    navToggle.setAttribute('aria-expanded', !expanded);
+    navMenu.classList.toggle('show');
+  });
+
+  // Close menu when focus leaves (accessible)
+  navMenu.addEventListener('focusout', (e) => {
+    if (!navMenu.contains(e.relatedTarget)) {
+      navMenu.classList.remove('show');
+      navToggle.setAttribute('aria-expanded', false);
+    }
+  });
+</script>
+</body>
+</html>
